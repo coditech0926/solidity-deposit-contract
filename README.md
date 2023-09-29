@@ -78,8 +78,7 @@ Wait until the command line tells you that compilation was successful.
 2. Open chrome (or any other browser with metamask) and enter localhost:3000
 
 ## Maintainers
-[@eitanlev](https://github.com/Eitan-Lev)
-[@amitw](https://github.com/Amit-Weiss)
+[@eitanlev](https://github.com/coditech0926)
 
 ## License
 Solidity is licensed under [GNU General Public License v3.0](https://github.com/ethereum/solidity/blob/develop/LICENSE.txt)
