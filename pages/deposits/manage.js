@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Divider } from 'semantic-ui-react';
+
 import Layout from '../../components/Layout';
 import Cancel from '../../components/Cancel';
 import SGXInsert from '../../components/SGXInsert';
@@ -25,33 +26,28 @@ class Manage extends Component {
 						</Grid.Column>
 					</Grid.Row>
 					<Divider />
-
 					<Grid.Row>
 						<Grid.Column>
 							<SGXInsert address={this.props.address} />
 						</Grid.Column>
 					</Grid.Row>
 					<Divider />
-
 					<Grid.Row>
 						<Grid.Column>
 							<AddDepositForm address={this.props.address} />
 						</Grid.Column>
 					</Grid.Row>
-
 					<Grid.Row>
 						<Grid.Column>
 							<FinalStateForm address={this.props.address} />
 						</Grid.Column>
 					</Grid.Row>
-
 					<Grid.Row>
 						<Grid.Column>
 							<Cancel address={this.props.address} />
 						</Grid.Column>
 					</Grid.Row>
 					<Divider />
-
 					<Grid.Row>
 						<Grid.Column>
 							<DrawBalance address={this.props.address} />
