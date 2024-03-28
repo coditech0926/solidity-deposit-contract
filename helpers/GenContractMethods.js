@@ -12,9 +12,11 @@ module.exports = {
 	setVersion(_typeOfRun) {
 		typeOfRun = _typeOfRun;
 	},
+	
 	initGenMethods(_typeOfRun) {
 		typeOfRun = _typeOfRun;
 	},
+	
 	async getEventLogs(result) {
 		if (typeOfRun == constants.UsingOriginalTruffle) {
 			return result.logs[0].args;
@@ -24,6 +26,7 @@ module.exports = {
 			assert(false, 'not yet implemented')
 		}
 	},
+	
 	async getContractAddress(contract) {
 		if (typeOfRun == constants.UsingOriginalTruffle) {
 			return contract.address;
