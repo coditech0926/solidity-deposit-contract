@@ -13,10 +13,8 @@ class DrawBalance extends Component {
 
 	onSubmit = async event => {
 		event.preventDefault();
-
 		const deposit = Deposit(this.props.address);
 		this.setState({ loading: true, errorMessage: '', successMessage: '' });
-
 		try {
 			const accounts = await web3.eth.getAccounts();
 			await deposit.methods.drawMyBalance().send({
@@ -25,7 +23,6 @@ class DrawBalance extends Component {
 		} catch (err) {
 			this.setState({ errorMessage: err.message });
 		}
-
 		this.setState({ loading: false });
 		if (this.state.errorMessage == null) {
 			this.setState({
