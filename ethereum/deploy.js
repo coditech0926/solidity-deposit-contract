@@ -1,12 +1,13 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
-const Web3 = require('web3');
 const compiledFactory = require('./build/DepositFactory.json');
 const compiledSGXContract = require('./build/SGXSimulator.json');
+const Web3 = require('web3');
 
 const provider = new HDWalletProvider(
 	'balance husband family north leader small cloud word cause game helmet tube',
 	'https://rinkeby.infura.io/v3/dd214a51646245cdb34fedc3d67ac56f'
 );
+
 const web3 = new Web3(provider);
 
 const deploy = async () => {
